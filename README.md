@@ -15,7 +15,7 @@ The database schema includes the following tables:
 
 ### Schema Diagram
 
-![Schema Diagram]("C:\Users\LOQ\Pictures\Creating star schema.png")
+![Schema Diagram](![Creating star schema](https://github.com/user-attachments/assets/c0eb4ca5-c288-466c-a4ef-df81a9b34bfd)
 
 ## Table Definitions
 
@@ -26,7 +26,8 @@ The tables are structured as follows:
 - **DimDoctorID**: Stores doctor details including name, department, and cost per hour.
 - **Fact_table**: Links the dimension tables and stores counts and charges related to medical services.
 
-![Table Definitions]("C:\Users\LOQ\Pictures\Final connections.png")
+![Table Definitions](![Tables_with_no connections](https://github.com/user-attachments/assets/2039cd0d-3ae4-477e-a841-f74bedfc469d)
+)
 
 ## Generating Sample Data
 
@@ -40,7 +41,8 @@ Sample data is generated for:
 - **Doctors**: 100 rows of doctor details.
 - **Facts**: 100 rows linking patients, doctors, and time with medical charges.
 
-![Data Generation]("C:\Users\LOQ\Pictures\row data.png")
+![Data Generation](![row data](https://github.com/user-attachments/assets/637999a4-ccb9-4e4c-8850-486ed9dd46e3)
+)
 
 ## ETL Process
 
@@ -52,8 +54,9 @@ The ETL process involves:
 
 ### ETL Steps
 
-![ETL Process]("C:\Users\LOQ\Pictures\Data_loading and table creations.png")
-![ETL Process]("C:\Users\LOQ\Pictures\SQL_task_for deleting duplicates.png")
+![ETL Process]![Data_loading and table creations](https://github.com/user-attachments/assets/39a650c1-1638-41a7-82a2-049d224ef761)
+![ETL Process]![SQL_task_for deleting duplicates](https://github.com/user-attachments/assets/ff56bd39-61a0-49b7-ace6-44b85c0314cc)
+
 
 ## Setting Foreign Keys
 
@@ -63,7 +66,10 @@ To ensure data integrity, foreign key constraints are set between the fact table
 - The `TimeId` in the fact table references the `TimeId` in the DimTimeID table.
 - The `DoctorId` in the fact table references the `DoctorId` in the DimDoctorID table.
 
-![Foreign Keys]("C:\Users\LOQ\Pictures\Connectiong tables together.png")
+![Foreign Keys]![Connectiong tables together](https://github.com/user-attachments/assets/38f1e13a-cc7a-4da1-8316-90f83aa4df5e)
+
+![Final Table]![Final connections](https://github.com/user-attachments/assets/0566b3a7-0c38-41d0-a800-5031acb40585)
+
 
 ## Usage
 
